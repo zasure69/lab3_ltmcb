@@ -1,0 +1,13 @@
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\bin\Debug\Lab3.exe.config
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\bin\Debug\Lab3.exe
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\bin\Debug\Lab3.pdb
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.csproj.AssemblyReference.cache
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.UDPClient_Bai1.resources
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.UDPServer_Bai1.resources
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.exe
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.pdb
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.Bai1.resources
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.Bai2.resources
