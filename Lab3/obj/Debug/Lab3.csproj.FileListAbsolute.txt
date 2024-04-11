@@ -11,3 +11,6 @@ C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.exe
 C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.pdb
 C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.Bai1.resources
 C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.Bai2.resources
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.Bai3.resources
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.TCPClient_Bai3.resources
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.TCPServer_Bai3.resources

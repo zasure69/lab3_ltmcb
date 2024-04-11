@@ -16,7 +16,7 @@ namespace Lab3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Bai2());
+            Application.Run(new Bai3());
         }
     }
 }

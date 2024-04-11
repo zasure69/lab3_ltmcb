@@ -58,6 +58,24 @@
     <Compile Include="Bai2.Designer.cs">
       <DependentUpon>Bai2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bai3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai3.Designer.cs">
+      <DependentUpon>Bai3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPClient_Bai3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCPClient_Bai3.Designer.cs">
+      <DependentUpon>TCPClient_Bai3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPServer_Bai3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCPServer_Bai3.Designer.cs">
+      <DependentUpon>TCPServer_Bai3.cs</DependentUpon>
+    </Compile>
     <Compile Include="UDPClient_Bai1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +95,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bai2.resx">
       <DependentUpon>Bai2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai3.resx">
+      <DependentUpon>Bai3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCPClient_Bai3.resx">
+      <DependentUpon>TCPClient_Bai3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCPServer_Bai3.resx">
+      <DependentUpon>TCPServer_Bai3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UDPClient_Bai1.resx">
       <DependentUpon>UDPClient_Bai1.cs</DependentUpon>
