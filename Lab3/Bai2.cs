@@ -78,7 +78,6 @@ namespace Lab3
                     }
                     catch (Exception e)
                     {
-                        this.Close();
                         break;
                     }
                     

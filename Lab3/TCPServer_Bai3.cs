@@ -24,12 +24,9 @@ namespace Lab3
         private void listenBtn_Click(object sender, EventArgs e)
         {
             listenBtn.Enabled = false;
-            CheckForIllegalCrossThreadCalls = false;
+            //CheckForIllegalCrossThreadCalls = false;
             Thread serverThread = new Thread(new ThreadStart(startSafeThread));
             serverThread.Start();
-            /*var threadParameters = new System.Threading.ThreadStart(delegate { startSafeThread(); });
-            var thread2 = new System.Threading.Thread(threadParameters);
-            thread2.Start();*/
         }
 
         void startSafeThread()
@@ -41,22 +38,11 @@ namespace Lab3
             Socket clientSocket;
 
             //Tạo socket bên nhận
-            TcpListener listenerSocket = new TcpListener(8080);
+            Socket listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-            IPEndPoint ipepServer = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
+            IPEndPoint ipepServer = new IPEndPoint(IPAddress.Any, 8080);
             //Gán socket lắng nghe tới địa chỉ IP của máy và port 8080
             listenerSocket.Bind(ipepServer);
-            /*if (listenBtn.InvokeRequired)
-            {
-                listenBtn.Invoke(new MethodInvoker(delegate
-                {
-                    listenBtn.Enabled = false;
-                }));
-            }
-            else
-            {*/
-                listenBtn.Enabled = false;
-            //}
 
             //bắt đầu lắng nghe .Socket.Listen(int backlog)
             //với backlog: là độ dài tối đa của hàng đợi 
@@ -64,39 +50,36 @@ namespace Lab3
             //đồng ý kết nối
             clientSocket = listenerSocket.Accept();
             //nhận dữ liệu
-            //InforMessages("New client connected");
-            listView1.Items.Add(new ListViewItem("New client connected!"));
+            InforMessages("New client connected");
             byte t = Convert.ToByte('\n');
             while (clientSocket.Connected)
             {
-                
                 string mess = "";
                 byte[] recvRes = new byte[50];
                 List<byte> res = new List<byte>();
                 do
                 {
-                    
-                    bytesReceived = clientSocket.Receive(recv);
-
-                    for (int i = 0; i < recv.Length; i++)
+                    try
                     {
-                        res.Add(recv[i]);
-                        if (recv[i] == t) { break; }
+                        bytesReceived = clientSocket.Receive(recv);
+
+                        for (int i = 0; i < recv.Length; i++)
+                        {
+                            res.Add(recv[i]);
+                            if (recv[i] == t) { break; }
+                        }
+                        recvRes = res.ToArray();
+                        mess = Encoding.UTF8.GetString(recvRes);
                     }
-                    recvRes = res.ToArray();
-                    mess = Encoding.UTF8.GetString(recvRes);
+                    catch (Exception e)
+                    {
+                        MessageBox.Show(e.ToString());
+                        break;
+                    }
                 } while (mess[mess.Length - 1] != '\n');
-                //InforMessages(mess);
-                if (mess == "Quit")
-                {
-                    listenerSocket.Close();
-                    break;
-                }
-                listView1.Items.Add(new ListViewItem(mess));
-                //listenerSocket.Close();
+                InforMessages(mess);
+                listenerSocket.Close();
             }
-            listenBtn.Enabled = true;
-            
         }
 
         private void InforMessages(string mess)

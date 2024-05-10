@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace Lab3
 {
-    public partial class Bai3 : Form
+    public partial class Bai4 : Form
     {
-        public Bai3()
+        public Bai4()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TCPServer_Bai3 tCPServer_Bai3 = new TCPServer_Bai3();
-            tCPServer_Bai3.Show();
+            Server_Bai4 server_Bai4 = new Server_Bai4();
+            server_Bai4.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TCPClient_Bai3 tCPClient_Bai3 = new TCPClient_Bai3();
-            tCPClient_Bai3.Show();
+            Chat_Client_Bai4 chat_client = new Chat_Client_Bai4();
+            chat_client.Show();
         }
     }
 }
