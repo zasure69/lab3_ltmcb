@@ -100,5 +100,10 @@ namespace Lab3
                 listView1.Items.Add(new ListViewItem(mess));
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

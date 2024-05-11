@@ -76,6 +76,12 @@
     <Compile Include="Chat_Client_Bai4.Designer.cs">
       <DependentUpon>Chat_Client_Bai4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Server_Bai4.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Chat_Client_Bai4.resx">
       <DependentUpon>Chat_Client_Bai4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Server_Bai4.resx">
       <DependentUpon>Server_Bai4.cs</DependentUpon>

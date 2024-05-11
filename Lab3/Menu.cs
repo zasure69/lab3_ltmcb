@@ -10,28 +10,40 @@ using System.Windows.Forms;
 
 namespace Lab3
 {
-    public partial class Bai1 : Form
+    public partial class Menu : Form
     {
-        public Bai1()
+        public Menu()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UDPServer_Bai1 udpServer = new UDPServer_Bai1();
-            udpServer.Show();
+            Bai1 b = new Bai1();
+            b.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            UDPClient_Bai1 udpClient = new UDPClient_Bai1();
-            udpClient.Show();
+            Bai2 b = new Bai2();
+            b.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Bai3 b = new Bai3();
+            b.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Bai4 b = new Bai4();
+            b.ShowDialog();
         }
     }
 }

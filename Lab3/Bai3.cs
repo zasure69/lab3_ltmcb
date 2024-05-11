@@ -28,5 +28,10 @@ namespace Lab3
             TCPClient_Bai3 tCPClient_Bai3 = new TCPClient_Bai3();
             tCPClient_Bai3.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

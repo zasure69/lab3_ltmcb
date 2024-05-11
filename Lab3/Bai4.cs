@@ -28,5 +28,10 @@ namespace Lab3
             Chat_Client_Bai4 chat_client = new Chat_Client_Bai4();
             chat_client.Show();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
