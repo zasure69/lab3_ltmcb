@@ -30,10 +30,13 @@
         {
             this.listViewChatRoom = new System.Windows.Forms.ListView();
             this.listenBtn = new System.Windows.Forms.Button();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listViewChatRoom
             // 
+            this.listViewChatRoom.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
             this.listViewChatRoom.GridLines = true;
             this.listViewChatRoom.HideSelection = false;
             this.listViewChatRoom.Location = new System.Drawing.Point(30, 95);
@@ -41,7 +44,7 @@
             this.listViewChatRoom.Size = new System.Drawing.Size(739, 343);
             this.listViewChatRoom.TabIndex = 3;
             this.listViewChatRoom.UseCompatibleStateImageBehavior = false;
-            this.listViewChatRoom.View = System.Windows.Forms.View.List;
+            this.listViewChatRoom.View = System.Windows.Forms.View.Details;
             // 
             // listenBtn
             // 
@@ -52,6 +55,11 @@
             this.listenBtn.Text = "Listen";
             this.listenBtn.UseVisualStyleBackColor = true;
             this.listenBtn.Click += new System.EventHandler(this.listenBtn_Click);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "";
+            this.columnHeader1.Width = 739;
             // 
             // Server_Bai4
             // 
@@ -70,5 +78,6 @@
 
         private System.Windows.Forms.ListView listViewChatRoom;
         private System.Windows.Forms.Button listenBtn;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }

@@ -34,10 +34,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listViewChat
             // 
+            this.listViewChat.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
             this.listViewChat.GridLines = true;
             this.listViewChat.HideSelection = false;
             this.listViewChat.Location = new System.Drawing.Point(12, 12);
@@ -45,7 +49,7 @@
             this.listViewChat.Size = new System.Drawing.Size(919, 339);
             this.listViewChat.TabIndex = 0;
             this.listViewChat.UseCompatibleStateImageBehavior = false;
-            this.listViewChat.View = System.Windows.Forms.View.List;
+            this.listViewChat.View = System.Windows.Forms.View.Details;
             // 
             // tbName
             // 
@@ -91,11 +95,27 @@
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(793, 417);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(118, 35);
+            this.btnExit.TabIndex = 6;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "";
+            this.columnHeader1.Width = 919;
+            // 
             // Chat_Client_Bai4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(943, 514);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -103,7 +123,8 @@
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.listViewChat);
             this.Name = "Chat_Client_Bai4";
-            this.Text = "Chat_Client_Bai4";this.Load += new System.EventHandler(this.Chat_Client_Bai4_Load);
+            this.Text = "Chat_Client_Bai4";
+            this.Load += new System.EventHandler(this.Chat_Client_Bai4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +138,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }

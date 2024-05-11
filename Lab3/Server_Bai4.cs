@@ -20,7 +20,7 @@ namespace Lab3
         private delegate void SafeCallDelegate(string text);
         private List<TcpClient> clientsList = new List<TcpClient>();
         TcpListener listener;
-        Socket socket;
+        int cnt = 1;
         public Server_Bai4()
         {
             InitializeComponent();
@@ -38,7 +38,7 @@ namespace Lab3
             try
             {
                 
-                listener = new TcpListener(IPAddress.Any, 8080);
+                listener = new TcpListener(IPAddress.Any, 8083);
                 while (true)
                 {
                     listener.Start();
@@ -57,17 +57,20 @@ namespace Lab3
             while(true)
             {
                 TcpClient client = listener.AcceptTcpClient();
-                InforMessages("Client mới đã kết nối vào\n");
+                InforMessages("Client " + cnt.ToString() + " mới đã kết nối vào\n");
+                
                 Thread clientThread = new Thread(() => startSafeThread(client));
                 clientThread.Start();
+                cnt++;
             }
         }
 
-        void startSafeThread(TcpClient client)
+        void startSafeThread(TcpClient client )
         {
             try
             {
                 clientsList.Add(client);
+                int index = cnt - 1;
                 StreamReader reader = new StreamReader(client.GetStream());
                 while (true)
                 {
@@ -79,7 +82,7 @@ namespace Lab3
                     }
                     else
                     {
-                        InforMessages("Client đã thoát");
+                        InforMessages("Client " + index.ToString() + " đã thoát");
                         break;
                     }
 

@@ -29,7 +29,7 @@ namespace Lab3
 
             //Kết nối đến server với 1 địa chỉ Ip và Port xác định
             IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
-            IPEndPoint ipEndPoint = new IPEndPoint(ipAddress, 8080);
+            IPEndPoint ipEndPoint = new IPEndPoint(ipAddress, 8082);
             tcpClient.Connect(ipEndPoint);
 
             //Tạo luồng để đọc và ghi dữ liệu dựa trên NetworkStream

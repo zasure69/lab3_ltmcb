@@ -40,7 +40,7 @@ namespace Lab3
             //Tạo socket bên nhận
             Socket listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-            IPEndPoint ipepServer = new IPEndPoint(IPAddress.Any, 8080);
+            IPEndPoint ipepServer = new IPEndPoint(IPAddress.Any, 8082);
             //Gán socket lắng nghe tới địa chỉ IP của máy và port 8080
             listenerSocket.Bind(ipepServer);
 

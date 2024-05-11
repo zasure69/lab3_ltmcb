@@ -37,3 +37,4 @@ D:\code\C#\lab3_ltmcb\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
 D:\code\C#\lab3_ltmcb\Lab3\obj\Debug\Lab3.exe
 D:\code\C#\lab3_ltmcb\Lab3\obj\Debug\Lab3.pdb
 D:\code\C#\lab3_ltmcb\Lab3\obj\Debug\Lab3.Menu.resources
+C:\TLHT\HK2_2023-2024\LapTrinhMangCanBan\TH\LAB3\Lab3\Lab3\obj\Debug\Lab3.Menu.resources
